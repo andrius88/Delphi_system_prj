@@ -1,0 +1,244 @@
+2020-03-19 16:09:30 cat: Execute, proto: postgresql-9, msg: SELECT 
+  CAST(username AS VARCHAR(20)) AS username,
+  CAST(name AS VARCHAR(20)) AS name, 
+  CAST(email AS VARCHAR(30)) AS email, 
+  CAST(phone AS VARCHAR(20)) AS phone, 
+  active 
+FROM 
+  private.user;
+
+2020-03-19 16:09:33 cat: Execute, proto: postgresql-9, msg: SELECT 
+  CAST(username AS VARCHAR(20)) AS username,
+  CAST(name AS VARCHAR(20)) AS name, 
+  CAST(email AS VARCHAR(30)) AS email, 
+  CAST(phone AS VARCHAR(20)) AS phone, 
+  active 
+FROM 
+  private.user;
+
+2020-03-19 16:49:53 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+
+2020-03-19 16:49:55 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+
+2020-03-19 17:13:28 cat: Execute, proto: postgresql-9, msg: SELECT 
+  CAST(username AS VARCHAR(20)) AS username,
+  CAST(name AS VARCHAR(20)) AS name, 
+  CAST(email AS VARCHAR(30)) AS email, 
+  CAST(phone AS VARCHAR(20)) AS phone, 
+  active 
+FROM 
+  private.user
+ORDER BY
+  username 
+
+2020-03-19 17:31:10 cat: Execute, proto: postgresql-9, msg: SELECT
+  username
+FROM
+  private.user
+ORDER BY
+  username
+
+2020-03-20 09:32:34 cat: Execute, proto: postgresql-9, msg: SELECT
+  username
+FROM
+  private.user
+ORDER BY
+  username
+
+2020-03-20 09:33:25 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code= NULL ORDER BY code
+2020-03-20 11:19:05 cat: Execute, proto: postgresql-9, msg: SELECT
+  CAST(username AS VARCHAR(20)) AS username
+FROM
+  private.user
+ORDER BY
+  username
+
+2020-03-20 11:43:00 cat: Execute, proto: postgresql-9, msg: SELECT
+  CAST(username AS VARCHAR(30)) AS username
+FROM
+  private.user
+ORDER BY
+  username
+
+2020-03-20 11:59:58 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-20 12:06:47 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-20 12:06:49 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-20 12:15:22 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-20 12:15:24 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-20 13:06:43 cat: Execute, proto: postgresql-9, msg: SELECT n.nspname,c.relname,a.attname,a.atttypid,a.attnotnull,a.atttypmod,a.attlen,a.attnum,pg_get_expr(def.adbin, def.adrelid) as adsrc,dsc.description  FROM pg_catalog.pg_namespace n  JOIN pg_catalog.pg_class c ON (c.relnamespace = n.oid)  JOIN pg_catalog.pg_attribute a ON (a.attrelid=c.oid)  LEFT JOIN pg_catalog.pg_attrdef def ON (a.attrelid=def.adrelid AND a.attnum = def.adnum) LEFT JOIN pg_catalog.pg_description dsc ON (c.oid=dsc.objoid AND a.attnum = dsc.objsubid)  LEFT JOIN pg_catalog.pg_class dc ON (dc.oid=dsc.classoid AND dc.relname='pg_class') LEFT JOIN pg_catalog.pg_namespace dn ON (dc.relnamespace=dn.oid AND dn.nspname='pg_catalog')  WHERE a.attnum > 0 AND NOT a.attisdropped AND c.relname LIKE E'site_runs_system' AND a.attname LIKE E'%' ORDER BY nspname,relname,attnum
+2020-03-20 13:06:50 cat: Execute, proto: postgresql-9, msg: SELECT NULL AS TABLE_CAT, n.nspname AS TABLE_SCHEM, ct.relname AS TABLE_NAME, a.attname AS COLUMN_NAME, a.attnum AS KEY_SEQ, ci.relname AS PK_NAME FROM pg_catalog.pg_namespace n, pg_catalog.pg_class ct, pg_catalog.pg_class ci, pg_catalog.pg_attribute a, pg_catalog.pg_index i WHERE ct.oid=i.indrelid AND ci.oid=i.indexrelid AND a.attrelid=ci.oid AND i.indisprimary AND ct.relname = E'site_runs_system' AND ct.relnamespace = n.oid ORDER BY table_name, pk_name, key_seq
+2020-03-20 14:20:46 cat: Execute, proto: postgresql-9, msg: SELECT 
+  code
+FROM 
+  private.system
+ORDER BY
+  code
+
+2020-03-20 14:28:28 cat: Execute, proto: postgresql-9, msg: SELECT 
+  code
+FROM 
+  private.system
+ORDER BY
+  code
+
+2020-03-20 14:28:32 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM privatemodule WHERE system_code =NULL ORDER BY code, errcode: 0, error: ERROR:  relation "privatemodule" does not exist
+LINE 1: SELECT system_code, code FROM privatemodule WHERE system_cod...
+                                      ^
+2020-03-20 14:28:37 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM privatemodule WHERE system_code =NULL ORDER BY code, errcode: 0, error: ERROR:  relation "privatemodule" does not exist
+LINE 1: SELECT system_code, code FROM privatemodule WHERE system_cod...
+                                      ^
+2020-03-20 14:29:03 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code =NULL ORDER BY code
+2020-03-20 14:30:12 cat: Execute, proto: postgresql-9, msg: SELECT 
+  code
+FROM 
+  private.system
+ORDER BY
+  code
+
+2020-03-20 14:30:16 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code =NULL ORDER BY code
+2020-03-20 14:30:44 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code =NULL ORDER BY code
+2020-03-20 14:49:44 cat: Execute, proto: postgresql-9, msg: SELECT 
+  code
+FROM 
+  private.system
+ORDER BY
+  code
+
+2020-03-20 14:54:30 cat: Execute, proto: postgresql-9, msg: SELECT 
+  code
+FROM 
+  private.system
+ORDER BY
+  code
+
+2020-03-20 15:46:06 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code =NULL ORDER BY code
+2020-03-20 17:04:46 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-20 17:50:14 cat: Execute, proto: postgresql-9, msg: SELECT 
+  system_code,
+  code
+FROM
+  private.module
+WHERE
+   system_code = 'nGoals'
+ORDER BY
+  code
+
+2020-03-20 17:52:28 cat: Execute, proto: postgresql-9, msg: SELECT 
+  system_code,
+  code
+FROM
+  private.module
+WHERE
+   system_code = 'nGoals'
+ORDER BY
+  code;
+
+2020-03-20 17:53:12 cat: Execute, proto: postgresql-9, msg: SELECT 
+  system_code,
+  code
+FROM
+  private.module
+WHERE
+   system_code = 'nGoals'
+ORDER BY
+  code
+

@@ -1,0 +1,91 @@
+unit Unit4;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, ZAbstractConnection, ZConnection, Data.DB,
+  ZAbstractRODataset, ZAbstractDataset, ZDataset, ZSqlUpdate;
+
+type
+  TdmDataModule = class(TDataModule)
+    upSystem: TZUpdateSQL;
+    dsSystem: TDataSource;
+    qSystem: TZQuery;
+    qSystemcode: TWideStringField;
+    qSystemdescription: TWideStringField;
+    conn: TZConnection;
+    dsModule: TDataSource;
+    qModule: TZQuery;
+    qModulesystem_code: TWideStringField;
+    qModulecode: TWideStringField;
+    qModuledescription: TWideStringField;
+    qModulemandatory: TBooleanField;
+    procedure DataModuleCreate(Sender: TObject);
+    procedure readConfigFile();
+
+
+  private
+    FHost            : string;
+    FPort            : string;
+    FDbName          : string;
+    FUser            : string;
+    FPasswrd         : string;
+
+  public
+    { Public declarations }
+  end;
+
+var
+  dmDataModule: TdmDataModule;
+
+implementation
+
+{%CLASSGROUP 'System.Classes.TPersistent'}
+
+{$R *.dfm}
+
+procedure TdmDataModule.DataModuleCreate(Sender: TObject);
+begin
+  readConfigFile();
+
+  conn.HostName := FHost;
+  conn.Port := strtoint(FPort);
+  conn.Database := FDbName;
+  conn.User := FUser;
+  conn.Password := FPasswrd;
+  conn.Connect;
+end;
+
+
+
+
+procedure TdmDataModule.readConfigFile();
+var
+_InputConfigFile : TextFile;
+_Line            : string;
+
+begin
+if not FileExists('config.ini') then
+  //ShowMessage('File: config.ini was not found')
+else
+  begin
+    AssignFile(_InputConfigFile, 'config.ini');
+    Reset(_InputConfigFile);
+    while not Eof(_InputConfigFile) do
+    begin
+      Readln(_InputConfigFile, _Line);
+      FHost := _Line;
+      Readln(_InputConfigFile, _Line);
+      FPort := _Line;
+      Readln(_InputConfigFile, _Line);
+      FDbName := _Line;
+      Readln(_InputConfigFile, _Line);
+      FUser := _Line;
+      Readln(_InputConfigFile, _Line);
+      FPasswrd := _Line;
+    end;
+    CloseFile(_InputConfigFile);
+  end;
+end;
+
+end.
