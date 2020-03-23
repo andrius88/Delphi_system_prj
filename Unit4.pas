@@ -99,6 +99,12 @@ type
     procedure upSystemVersionBeforeModifySQL(Sender: TObject);
     procedure qSiteAfterScroll(DataSet: TDataSet);
     procedure qSiteRunsSystemAfterScroll(DataSet: TDataSet);
+    procedure upSiteRunsSystemBeforeInsertSQL(Sender: TObject);
+    procedure upSiteRunsSystemBeforeDeleteSQL(Sender: TObject);
+    procedure upSiteRunsSystemBeforeModifySQL(Sender: TObject);
+    procedure upSiteRunsModuleBeforeInsertSQL(Sender: TObject);
+    procedure upSiteRunsModuleBeforeModifySQL(Sender: TObject);
+    procedure upSiteRunsModuleBeforeDeleteSQL(Sender: TObject);
 
 
   private
@@ -181,6 +187,41 @@ begin
   dmDataModule.upModuleVersion.Params.ParamByName('prm_system_version').Value := dmDataModule.qSystemVersionversion.Value;
 end;
 
+
+procedure TdmDataModule.upSiteRunsModuleBeforeDeleteSQL(Sender: TObject);
+begin
+  upSiteRunsModule.Params.ParamByName('prm_site').Value := qSiteid.Value;
+  upSiteRunsModule.Params.ParamByName('prm_system_code').Value := dmDataModule.qSiteRunsSystemsystem_code.Value;
+end;
+
+procedure TdmDataModule.upSiteRunsModuleBeforeInsertSQL(Sender: TObject);
+begin
+  upSiteRunsModule.Params.ParamByName('prm_site').Value := qSiteid.Value;
+  upSiteRunsModule.Params.ParamByName('prm_system_code').Value := dmDataModule.qSiteRunsSystemsystem_code.Value;
+end;
+
+procedure TdmDataModule.upSiteRunsModuleBeforeModifySQL(Sender: TObject);
+begin
+  upSiteRunsModule.Params.ParamByName('prm_site').Value := qSiteid.Value;
+  upSiteRunsModule.Params.ParamByName('prm_system_code').Value := dmDataModule.qSiteRunsSystemsystem_code.Value;
+end;
+
+procedure TdmDataModule.upSiteRunsSystemBeforeDeleteSQL(Sender: TObject);
+begin
+  upSiteRunsSystem.Params.ParamByName('prm_site').Value := qSiteid.Value;
+end;
+
+
+procedure TdmDataModule.upSiteRunsSystemBeforeInsertSQL(Sender: TObject);
+begin
+  upSiteRunsSystem.Params.ParamByName('prm_site').Value := qSiteid.Value;
+end;
+
+procedure TdmDataModule.upSiteRunsSystemBeforeModifySQL(Sender: TObject);
+begin
+  upSiteRunsSystem.Params.ParamByName('prm_site').Value := qSiteid.Value;
+end;
+
 procedure TdmDataModule.upSystemVersionBeforeDeleteSQL(Sender: TObject);
 begin
   dmDataModule.upSystemVersion.Params.ParamByName('prm_system_code2').Value := dmDataModule.qSystemcode.Value;
@@ -235,10 +276,24 @@ end;
 
 procedure TdmDataModule.qSiteAfterScroll(DataSet: TDataSet);
 begin
-  dmDataModule.qSiteRunsSystem.Close;
-  dmDataModule.qSiteRunsSystem.ParamByName('prm_site').Value := dmDataModule.qSiteid.Value;
-  dmDataModule.qSiteRunsSystem.Open;
+  qSiteRunsSystem.Close;
+  qSiteRunsSystem.ParamByName('prm_site').Value := dmDataModule.qSiteid.Value;
+  qSiteRunsSystem.Open;
+
+  qSiteRunsModule.Close;
+  qSiteRunsModule.ParamByName('prm_site').Value := qSiteid.Value;
+  qSiteRunsModule.ParamByName('prm_system_code').Value := qSiteRunsSystemsystem_code.Value;
+  qSiteRunsModule.Open;
+
+  qSiteRunsModuleCmbBox.Close;
+  qSiteRunsModuleCmbBox.ParamByName('prm_system_code').Value := qSiteRunsSystemsystem_code.Value;
+  qSiteRunsModuleCmbBox.Open;
+
+  //upSiteRunsSystem
+
 end;
+
+
 
 procedure TdmDataModule.qSiteRunsSystemAfterScroll(DataSet: TDataSet);
 begin

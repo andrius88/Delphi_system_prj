@@ -790,6 +790,7 @@ object dmDataModule: TdmDataModule
   object qSiteRunsModule: TZQuery
     Connection = conn
     UpdateObject = upSiteRunsModule
+    Active = True
     SQL.Strings = (
       'SELECT '
       '  CAST(module_code AS VARCHAR(20)) AS module_code,'
@@ -964,22 +965,29 @@ object dmDataModule: TdmDataModule
     DeleteSQL.Strings = (
       'DELETE FROM private.site_runs_system'
       'WHERE'
-      '  site_runs_system.site = :OLD_site AND'
+      '  site_runs_system.site = :prm_site AND'
       '  site_runs_system.system_code = :OLD_system_code')
     InsertSQL.Strings = (
       'INSERT INTO private.site_runs_system'
-      '  (system_code, last_deployment, last_successfull_deployment)'
+      
+        '  (site, system_code, last_deployment, last_successfull_deployme' +
+        'nt)'
       'VALUES'
-      '  (:system_code, :last_deployment, :last_successfull_deployment)')
+      
+        '  (:prm_site, :system_code, :last_deployment, :last_successfull_' +
+        'deployment)')
     ModifySQL.Strings = (
       'UPDATE private.site_runs_system SET'
       '  system_code = :system_code,'
       '  last_deployment = :last_deployment,'
       '  last_successfull_deployment = :last_successfull_deployment'
       'WHERE'
-      '  site_runs_system.site = :OLD_site AND'
+      '  site_runs_system.site = :prm_site AND'
       '  site_runs_system.system_code = :OLD_system_code')
     UseSequenceFieldForRefreshSQL = False
+    BeforeDeleteSQL = upSiteRunsSystemBeforeDeleteSQL
+    BeforeInsertSQL = upSiteRunsSystemBeforeInsertSQL
+    BeforeModifySQL = upSiteRunsSystemBeforeModifySQL
     Left = 320
     Top = 368
     ParamData = <
@@ -1000,7 +1008,7 @@ object dmDataModule: TdmDataModule
       end
       item
         DataType = ftUnknown
-        Name = 'OLD_site'
+        Name = 'prm_site'
         ParamType = ptUnknown
       end
       item
@@ -1010,9 +1018,57 @@ object dmDataModule: TdmDataModule
       end>
   end
   object upSiteRunsModule: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM private.site_runs_module'
+      'WHERE'
+      '  site_runs_module.site = :prm_site AND'
+      '  site_runs_module.system_code = :prm_system_code AND'
+      '  site_runs_module.module_code = :OLD_module_code')
+    InsertSQL.Strings = (
+      'INSERT INTO private.site_runs_module'
+      '  (site, system_code, module_code, num_of_lic)'
+      'VALUES'
+      '  (:prm_site, :prm_system_code, :module_code, :num_of_lic)')
+    ModifySQL.Strings = (
+      'UPDATE private.site_runs_module SET'
+      '  module_code = :module_code,'
+      '  num_of_lic = :num_of_lic'
+      'WHERE'
+      '  site_runs_module.site = :prm_site AND'
+      '  site_runs_module.system_code = :prm_system_code AND'
+      '  site_runs_module.module_code = :OLD_module_code')
     UseSequenceFieldForRefreshSQL = False
+    BeforeDeleteSQL = upSiteRunsModuleBeforeDeleteSQL
+    BeforeInsertSQL = upSiteRunsModuleBeforeInsertSQL
+    BeforeModifySQL = upSiteRunsModuleBeforeModifySQL
     Left = 464
     Top = 368
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'module_code'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'num_of_lic'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'prm_site'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'prm_system_code'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'OLD_module_code'
+        ParamType = ptUnknown
+      end>
   end
   object qSiteRunsSystemCmbBox: TZQuery
     Connection = conn
@@ -1039,6 +1095,7 @@ object dmDataModule: TdmDataModule
     Top = 432
   end
   object dsSiteRunsModuleCmbBox: TDataSource
+    DataSet = qSiteRunsModuleCmbBox
     Left = 512
     Top = 432
   end
@@ -1051,7 +1108,7 @@ object dmDataModule: TdmDataModule
       'FROM'
       '  private.module'
       'WHERE'
-      '   system_code = :prm_system_code'
+      '   system_code =:prm_system_code '
       'ORDER BY'
       '  code')
     Params = <

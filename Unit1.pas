@@ -55,7 +55,6 @@ type
     DBNavigator8: TDBNavigator;
     cbSiteRunsSystemComboBox: TDBLookupComboBox;
     cbSiteRunsModuleComboBox: TDBLookupComboBox;
-    DBGrid10: TDBGrid;
     procedure FormCreate(Sender: TObject);
     procedure tsSystemVersionEnter(Sender: TObject);
     procedure dbgModuleVersionColExit(Sender: TObject);
@@ -69,8 +68,6 @@ type
     procedure dbgModuleVersionCellClick(Column: TColumn);
     procedure tsSystemVersionShow(Sender: TObject);
     procedure tsSitesEnter(Sender: TObject);
-    procedure qUserusernameGetText(Sender: TField; var Text: string;
-      DisplayText: Boolean);
     procedure tsUsersEnter(Sender: TObject);
     procedure dbgSitesDrawColumnCell (Sender: TObject; const Rect: TRect;
       DataCol: Integer; Column: TColumn; State: TGridDrawState);
@@ -85,6 +82,12 @@ type
     procedure dbgSiteRunsModuleColExit(Sender: TObject);
     procedure dbgSiteRunsModuleKeyPress(Sender: TObject; var Key: Char);
     procedure dbgSiteRunSystemCellClick(Column: TColumn);
+    procedure dbgSiteRunsModuleCellClick(Column: TColumn);
+    procedure dbgSiteRunSystemExit(Sender: TObject);
+    procedure dbgSitesExit(Sender: TObject);
+    procedure dbgSiteRunsModuleExit(Sender: TObject);
+    procedure dbgSitesCellClick(Column: TColumn);
+    procedure dbgUserExit(Sender: TObject);
 
 
   private
@@ -175,6 +178,8 @@ begin
   dmDataModule.qSite.Open;
 
   cbUserComboBox.Visible := False;
+  cbSiteRunsSystemComboBox.Visible := False;
+  cbSiteRunsModuleComboBox.Visible := False;
 end;
 
 procedure TfrmMainForm.tsUsersEnter(Sender: TObject);
@@ -304,15 +309,32 @@ begin
    dbgModuleVersion.SetFocus;
 end;
 
+procedure TfrmMainForm.dbgSitesCellClick(Column: TColumn);
+begin
+   if Column.Index = 8 then
+     dbgSites.Options := dbgSiteRunSystem.Options - [dgEditing]
+   else
+     dbgSites.Options := dbgSiteRunSystem.Options + [dgEditing];
+   dbgSites.SetFocus;
+end;
+
 procedure TfrmMainForm.dbgSiteRunSystemCellClick(Column: TColumn);
 begin
    if Column.Index = 0 then
-     dbgSiteRunSystem.Options := dbgModuleVersion.Options - [dgEditing]
+     dbgSiteRunSystem.Options := dbgSiteRunSystem.Options - [dgEditing]
    else
-     dbgSiteRunSystem.Options := dbgModuleVersion.Options + [dgEditing];
+     dbgSiteRunSystem.Options := dbgSiteRunSystem.Options + [dgEditing];
    dbgSiteRunSystem.SetFocus;
 end;
 
+procedure TfrmMainForm.dbgSiteRunsModuleCellClick(Column: TColumn);
+begin
+  if Column.Index = 0 then
+     dbgSiteRunsModule.Options := dbgSiteRunsModule.Options - [dgEditing]
+   else
+     dbgSiteRunsModule.Options := dbgSiteRunsModule.Options + [dgEditing];
+   dbgSiteRunsModule.SetFocus;
+end;
 
 procedure TfrmMainForm.dbgModuleVersionDrawColumnCell(Sender: TObject; const Rect: TRect;
   DataCol: Integer; Column: TColumn; State: TGridDrawState);
@@ -353,6 +375,8 @@ if (gdFocused in State) then
    end
 end;
 
+
+
 procedure TfrmMainForm.dbgSiteRunSystemDrawColumnCell (Sender: TObject; const Rect: TRect;
  DataCol: Integer; Column: TColumn; State: TGridDrawState);
 begin
@@ -370,6 +394,8 @@ if (gdFocused in State) then
     end;
    end
 end;
+
+
 
 procedure TfrmMainForm.dbgSiteRunsModuleDrawColumnCell (Sender: TObject; const Rect: TRect;
  DataCol: Integer; Column: TColumn; State: TGridDrawState);
@@ -389,11 +415,13 @@ if (gdFocused in State) then
    end
 end;
 
+
 procedure TfrmMainForm.dbgModuleVersionColExit(Sender: TObject);
 begin
   if dbgModuleVersion.SelectedField.FieldName = cbDBLookupComboBox.DataField then
     cbDBLookupComboBox.Visible := False;
 end;
+
 
 procedure TfrmMainForm.dbgSitesColExit(Sender: TObject);
 begin
@@ -406,6 +434,7 @@ begin
 if dbgSiteRunSystem.SelectedField.FieldName = cbSiteRunsSystemComboBox.DataField then
   cbSiteRunsSystemComboBox.Visible := False;
 end;
+
 
 procedure TfrmMainForm.dbgSiteRunsModuleColExit(Sender: TObject);
 begin
@@ -440,6 +469,8 @@ begin
   end
 end;
 
+
+
 procedure TfrmMainForm.dbgSiteRunSystemKeyPress(Sender: TObject; var Key: Char);
 begin
   if (key = Chr(9)) then
@@ -472,11 +503,50 @@ begin
     dmDataModule.qModuleVersion.ApplyUpdates;
 end;
 
-
-procedure TfrmMainForm.qUserusernameGetText(Sender: TField; var Text: string;
-  DisplayText: Boolean);
+procedure TfrmMainForm.dbgUserExit(Sender: TObject);
 begin
-//  Text := Sender.AsString;
+  if dmDataModule.qUser.State in [dsEdit, dsInsert] then
+    begin
+      dmDataModule.qUser.ApplyUpdates;
+    end;
+
+  dmDataModule.qUserCombobox.Close;
+  dmDataModule.qUserCombobox.Open;
+end;
+
+procedure TfrmMainForm.dbgSiteRunSystemExit(Sender: TObject);
+begin
+  if dmDataModule.qSiteRunsSystem.State in [dsEdit, dsInsert] then
+    begin
+      dmDataModule.qSiteRunsSystem.ApplyUpdates;
+      cbSiteRunsSystemComboBox.Visible := False;
+    end;
+
+  //cbSiteRunsSystemComboBox.Visible := False;    //neveikia dropBox
+  //dbgSiteRunSystem.DoExit;  // luzta aplikacija
+  dmDataModule.qSiteRunsModuleCmbBox.Close;
+  dmDataModule.qSiteRunsModuleCmbBox.ParamByName('prm_system_code').Value := dmDataModule.qSiteRunsSystemsystem_code.Value;
+  dmDataModule.qSiteRunsModuleCmbBox.Open;
+end;
+
+procedure TfrmMainForm.dbgSiteRunsModuleExit(Sender: TObject);
+begin
+  if dmDataModule.qSiteRunsModule.State in [dsEdit, dsInsert] then
+    begin
+      dmDataModule.qSiteRunsModule.ApplyUpdates;
+      cbSiteRunsModuleComboBox.Visible := False;
+    end;
+
+  //cbSiteRunsModuleComboBox.Visible := False;
+end;
+
+procedure TfrmMainForm.dbgSitesExit(Sender: TObject);
+begin
+  if dmDataModule.qSite.State in [dsEdit, dsInsert] then
+    dmDataModule.qSite.ApplyUpdates;
+
+  //cbUserComboBox.Visible := False;  // neveikia dropBox
+    //dbgSites.DoExit;  // luzta aplikacija
 end;
 
 

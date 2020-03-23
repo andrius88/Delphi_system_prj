@@ -323,8 +323,9 @@ object frmMainForm: TfrmMainForm
       Caption = 'Sites'
       ImageIndex = 2
       OnEnter = tsSitesEnter
-      ExplicitLeft = 0
-      ExplicitTop = 28
+      DesignSize = (
+        722
+        609)
       object lblSites: TLabel
         Left = 3
         Top = 15
@@ -369,6 +370,7 @@ object frmMainForm: TfrmMainForm
         Top = 40
         Width = 710
         Height = 233
+        Anchors = [akLeft, akTop, akRight]
         DataSource = dmDataModule.dsSite
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
@@ -376,8 +378,10 @@ object frmMainForm: TfrmMainForm
         TitleFont.Height = -11
         TitleFont.Name = 'Tahoma'
         TitleFont.Style = []
+        OnCellClick = dbgSitesCellClick
         OnColExit = dbgSitesColExit
         OnDrawColumnCell = dbgSitesDrawColumnCell
+        OnExit = dbgSitesExit
         OnKeyPress = dbgSitesKeyPress
         Columns = <
           item
@@ -456,6 +460,7 @@ object frmMainForm: TfrmMainForm
         OnCellClick = dbgSiteRunSystemCellClick
         OnColExit = dbgSiteRunSystemColExit
         OnDrawColumnCell = dbgSiteRunSystemDrawColumnCell
+        OnExit = dbgSiteRunSystemExit
         OnKeyPress = dbgSiteRunSystemKeyPress
         Columns = <
           item
@@ -482,14 +487,17 @@ object frmMainForm: TfrmMainForm
         Width = 313
         Height = 209
         DataSource = dmDataModule.dsSiteRunsModule
+        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
         TabOrder = 2
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
         TitleFont.Height = -11
         TitleFont.Name = 'Tahoma'
         TitleFont.Style = []
+        OnCellClick = dbgSiteRunsModuleCellClick
         OnColExit = dbgSiteRunsModuleColExit
         OnDrawColumnCell = dbgSiteRunsModuleDrawColumnCell
+        OnExit = dbgSiteRunsModuleExit
         OnKeyPress = dbgSiteRunsModuleKeyPress
         Columns = <
           item
@@ -559,8 +567,8 @@ object frmMainForm: TfrmMainForm
         Visible = False
       end
       object cbSiteRunsModuleComboBox: TDBLookupComboBox
-        Left = 560
-        Top = 318
+        Left = 504
+        Top = 288
         Width = 145
         Height = 21
         DataField = 'module_code'
@@ -576,8 +584,6 @@ object frmMainForm: TfrmMainForm
       Caption = 'Users'
       ImageIndex = 3
       OnEnter = tsUsersEnter
-      ExplicitLeft = 0
-      ExplicitTop = 27
       object lblUser: TLabel
         Left = 16
         Top = 7
@@ -603,6 +609,7 @@ object frmMainForm: TfrmMainForm
         TitleFont.Height = -11
         TitleFont.Name = 'Tahoma'
         TitleFont.Style = []
+        OnExit = dbgUserExit
         Columns = <
           item
             Expanded = False
@@ -644,19 +651,6 @@ object frmMainForm: TfrmMainForm
         Kind = dbnHorizontal
         TabOrder = 1
       end
-      object DBGrid10: TDBGrid
-        Left = 312
-        Top = 424
-        Width = 320
-        Height = 120
-        DataSource = dmDataModule.dsSiteRunsModuleCmbBox
-        TabOrder = 2
-        TitleFont.Charset = DEFAULT_CHARSET
-        TitleFont.Color = clWindowText
-        TitleFont.Height = -11
-        TitleFont.Name = 'Tahoma'
-        TitleFont.Style = []
-      end
     end
   end
   object ZSQLMonitor1: TZSQLMonitor
@@ -664,7 +658,7 @@ object frmMainForm: TfrmMainForm
     AutoSave = True
     FileName = 'sql_monitor.txt'
     MaxTraceCount = 100
-    Left = 376
-    Top = 304
+    Left = 368
+    Top = 328
   end
 end
