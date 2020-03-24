@@ -7,13 +7,17 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Grids, Vcl.DBGrids,
   Data.DB, ZAbstractRODataset, ZAbstractDataset, ZDataset, ZAbstractConnection,
   ZConnection, Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.ComCtrls, ZSqlUpdate,
-  Vcl.DBLookup, System.Types, System.IOUtils, ZSqlMonitor, Unit2, Unit3, Unit4;
+  Vcl.DBLookup, System.Types, System.IOUtils, ZSqlMonitor, Unit2, Unit3, Unit4
+  , HackDBGrid
+  ;
 
 type
   // Hack to redeclare your TDBGrid here without the the form designer going mad
   TDBGrid = class(Vcl.DBGrids.TDBGrid)
-      procedure WMHScroll(var Msg: TWMHScroll); message WM_HSCROLL;
+    procedure WMHScroll(var Msg: TWMHScroll); message WM_HSCROLL;
   end;
+
+
 type
   TfrmMainForm = class(TForm)
     PageControl1: TPageControl;
@@ -55,6 +59,9 @@ type
     DBNavigator8: TDBNavigator;
     cbSiteRunsSystemComboBox: TDBLookupComboBox;
     cbSiteRunsModuleComboBox: TDBLookupComboBox;
+    tsUploads: TTabSheet;
+    DBGrid1: TDBGrid;
+    lblUploads: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure tsSystemVersionEnter(Sender: TObject);
     procedure dbgModuleVersionColExit(Sender: TObject);
@@ -88,10 +95,11 @@ type
     procedure dbgSiteRunsModuleExit(Sender: TObject);
     procedure dbgSitesCellClick(Column: TColumn);
     procedure dbgUserExit(Sender: TObject);
+    procedure cbSiteRunsSystemComboBoxExit(Sender: TObject);
 
 
   private
-
+    //FDBGSites: THackDBGrid;
   public
 
 end;
@@ -103,9 +111,43 @@ implementation
 
 {$R *.dfm}
 
+procedure TDBGrid.WMHScroll(var Msg: TWMHScroll);
+begin
+  case Msg.ScrollCode of
+    SB_ENDSCROLL:
+      OutputDebugString('SB_ENDSCROLL');
+    SB_LEFT:
+      OutputDebugString('SB_LEFT');
+    SB_RIGHT:
+      OutputDebugString('SB_RIGHT');
+    SB_LINELEFT:
+    begin
+      //ShowMessage('Moves line left');
+      //cbUserComboBox.Visible := False;
+      OutputDebugString('SB_LINELEFT');
+    end;
+    SB_LINERIGHT:
+      OutputDebugString('SB_LINERIGHT');
+    SB_PAGELEFT:
+    begin
+      //ShowMessage('Moves page left');
+      //cbUserComboBox.Visible := False;
+      OutputDebugString('SB_PAGELEFT');
+    end;
+    SB_PAGERIGHT:
+      OutputDebugString('SB_PAGERIGHT');
+    SB_THUMBPOSITION:
+      OutputDebugString('SB_THUMBPOSITION');
+  end;
+  inherited; // to keep the expected behavior
+end;
+
 procedure TfrmMainForm.FormCreate(Sender: TObject);
 begin
-
+{  FDBGSites := THackDBGrid.Create(Self);
+  FDBGSites.Parent := dbgSites.Parent;
+  FDBGSites.Align := alClient;
+  FDBGSites.DataSource := dbgSites.DataSource;  }
   PageControl1.Pages[1];
   dmDataModule.qSystem.Open;
 end;
@@ -188,7 +230,7 @@ begin
   dmDataModule.qUser.Open;
 end;
 
-procedure TDBGrid.WMHScroll(var Msg: TWMHScroll);
+{procedure TDBGrid.WMHScroll(var Msg: TWMHScroll);
 begin
   if self.Name = 'DBGrid4' then
   begin
@@ -209,7 +251,8 @@ begin
       frmMainForm.cbDBLookupComboBox.Visible := False;
   end;
   inherited; // to keep the expected behavior
-end;
+end; }
+
 
 
 procedure TfrmMainForm.Button1Click(Sender: TObject);
@@ -299,7 +342,6 @@ begin
 end;
 
 
-
 procedure TfrmMainForm.dbgModuleVersionCellClick(Column: TColumn);
 begin
    if Column.Index = 0 then
@@ -310,16 +352,47 @@ begin
 end;
 
 procedure TfrmMainForm.dbgSitesCellClick(Column: TColumn);
+//var
+//  CurrRow: Integer;
+//  Rect: TRect;
 begin
+//  CurrRow := THackDBGrid(dbgSites).Row;
+//  Rect := THackDBGrid(dbgSites).CellRect(9, CurrRow);
+//
+//  cbUserComboBox.Left := Rect.Left + dbgSites.Left + 2;
+//  cbUserComboBox.Top := Rect.Top + dbgSites.Top + 2;
+//  cbUserComboBox.Width := Rect.Right - Rect.Left;
+//  cbUserComboBox.Width := Rect.Right - Rect.Left;
+//  cbUserComboBox.Height := Rect.Bottom - Rect.Top;
+//  cbUserComboBox.Visible := True;
+
    if Column.Index = 8 then
-     dbgSites.Options := dbgSiteRunSystem.Options - [dgEditing]
+     if (Column.Field.FieldName = cbUserComboBox.DataField) then
+      dbgSites.Options := dbgSiteRunSystem.Options - [dgEditing]
    else
      dbgSites.Options := dbgSiteRunSystem.Options + [dgEditing];
    dbgSites.SetFocus;
 end;
 
 procedure TfrmMainForm.dbgSiteRunSystemCellClick(Column: TColumn);
+//var
+//  CurrRow: Integer;
+//  Rect: TRect;
 begin
+//  CurrRow := THackDBGrid(dbgSiteRunSystem).Row;
+//  Rect := THackDBGrid(dbgSiteRunSystem).CellRect(1, CurrRow);
+//  if (Column.Field.FieldName = cbSiteRunsSystemComboBox.DataField) then
+//    begin
+//      cbSiteRunsSystemComboBox.Left := Rect.Left + dbgSiteRunSystem.Left + 2;
+//      cbSiteRunsSystemComboBox.Top := Rect.Top + dbgSiteRunSystem.Top + 2;
+//      cbSiteRunsSystemComboBox.Width := Rect.Right - Rect.Left;
+//      cbSiteRunsSystemComboBox.Width := Rect.Right - Rect.Left;
+//      cbSiteRunsSystemComboBox.Height := Rect.Bottom - Rect.Top;
+//
+//      cbSiteRunsSystemComboBox.Tag := 2;
+//      cbSiteRunsSystemComboBox.Visible := True;
+//    end;
+
    if Column.Index = 0 then
      dbgSiteRunSystem.Options := dbgSiteRunSystem.Options - [dgEditing]
    else
@@ -343,8 +416,6 @@ begin
   begin
     if (Column.Field.FieldName = cbDBLookupComboBox.DataField) then
     begin
-//    if cbDBLookupComboBox.Visible then
-//      exit;
       cbDBLookupComboBox.Left := Rect.Left + dbgModuleVersion.Left + 2;
       cbDBLookupComboBox.Top := Rect.Top + dbgModuleVersion.Top + 2;
       cbDBLookupComboBox.Width := Rect.Right - Rect.Left;
@@ -522,11 +593,22 @@ begin
       cbSiteRunsSystemComboBox.Visible := False;
     end;
 
-  //cbSiteRunsSystemComboBox.Visible := False;    //neveikia dropBox
-  //dbgSiteRunSystem.DoExit;  // luzta aplikacija
+
   dmDataModule.qSiteRunsModuleCmbBox.Close;
   dmDataModule.qSiteRunsModuleCmbBox.ParamByName('prm_system_code').Value := dmDataModule.qSiteRunsSystemsystem_code.Value;
   dmDataModule.qSiteRunsModuleCmbBox.Open;
+
+//  if cbSiteRunsSystemComboBox.Tag <> 2 then
+//  cbSiteRunsSystemComboBox.Visible := False;
+
+  //cbSiteRunsSystemComboBox.Visible := False;    //neveikia dropBox
+  //dbgSiteRunSystem.DoExit;  // luzta aplikacija
+end;
+
+procedure TfrmMainForm.cbSiteRunsSystemComboBoxExit(Sender: TObject);
+begin
+//  cbSiteRunsSystemComboBox.tag := 0;
+//  cbSiteRunsSystemComboBox.Visible := False;
 end;
 
 procedure TfrmMainForm.dbgSiteRunsModuleExit(Sender: TObject);
@@ -545,8 +627,8 @@ begin
   if dmDataModule.qSite.State in [dsEdit, dsInsert] then
     dmDataModule.qSite.ApplyUpdates;
 
-  //cbUserComboBox.Visible := False;  // neveikia dropBox
-    //dbgSites.DoExit;  // luzta aplikacija
+  //cbUserComboBox.Visible := False;  // neveikia comboBox
+  //dbgSites.DoExit;  // luzta aplikacija
 end;
 
 

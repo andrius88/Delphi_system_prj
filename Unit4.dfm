@@ -1,7 +1,7 @@
 object dmDataModule: TdmDataModule
   OldCreateOrder = False
   OnCreate = DataModuleCreate
-  Height = 563
+  Height = 592
   Width = 738
   object upSystem: TZUpdateSQL
     DeleteSQL.Strings = (
@@ -236,7 +236,6 @@ object dmDataModule: TdmDataModule
     AfterScroll = qModuleVersionAfterScroll
     UpdateObject = upModuleVersion
     CachedUpdates = True
-    Active = True
     SQL.Strings = (
       'SELECT '
       '  CAST(module_code AS VARCHAR(20)) AS module_code,'
@@ -1135,5 +1134,40 @@ object dmDataModule: TdmDataModule
       Required = True
       Size = 40
     end
+  end
+  object qModFileDiffView: TZQuery
+    Connection = conn
+    SQL.Strings = (
+      'SELECT'
+      '  system_code, '
+      '  module_code,'
+      '  "version",'
+      '  destination_path,'
+      '  file_content '
+      'FROM '
+      '  public.module_file_diff ')
+    Params = <>
+    Left = 72
+    Top = 488
+    object qModFileDiffViewsystem_code: TWideMemoField
+      FieldName = 'system_code'
+      BlobType = ftWideMemo
+    end
+    object qModFileDiffViewmodule_code: TWideMemoField
+      FieldName = 'module_code'
+      BlobType = ftWideMemo
+    end
+    object qModFileDiffViewdestination_path: TWideMemoField
+      FieldName = 'destination_path'
+      BlobType = ftWideMemo
+    end
+    object qModFileDiffViewfile_content: TBlobField
+      FieldName = 'file_content'
+    end
+  end
+  object dsModFileDiffView: TDataSource
+    DataSet = qModFileDiffView
+    Left = 136
+    Top = 504
   end
 end

@@ -363,3 +363,80 @@ FROM
 ORDER BY
   code
 
+2020-03-23 16:59:24 cat: Connect, proto: postgresql-9, msg: CONNECT TO "update_prod" AS USER "update_server_owner"
+2020-03-23 16:59:24 cat: Execute, proto: postgresql-9, msg: select setting from pg_settings where name = 'bytea_output'
+2020-03-23 16:59:24 cat: Execute, proto: postgresql-9, msg: SELECT 
+  code, 
+  CAST(description AS VARCHAR(50)) AS description
+FROM
+  private.system
+ORDER BY
+  description
+
+2020-03-23 16:59:24 cat: Execute, proto: postgresql-9, msg: SELECT version()
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT n.nspname,c.relname,a.attname,a.atttypid,a.attnotnull,a.atttypmod,a.attlen,a.attnum,pg_get_expr(def.adbin, def.adrelid) as adsrc,dsc.description  FROM pg_catalog.pg_namespace n  JOIN pg_catalog.pg_class c ON (c.relnamespace = n.oid)  JOIN pg_catalog.pg_attribute a ON (a.attrelid=c.oid)  LEFT JOIN pg_catalog.pg_attrdef def ON (a.attrelid=def.adrelid AND a.attnum = def.adnum) LEFT JOIN pg_catalog.pg_description dsc ON (c.oid=dsc.objoid AND a.attnum = dsc.objsubid)  LEFT JOIN pg_catalog.pg_class dc ON (dc.oid=dsc.classoid AND dc.relname='pg_class') LEFT JOIN pg_catalog.pg_namespace dn ON (dc.relnamespace=dn.oid AND dn.nspname='pg_catalog')  WHERE a.attnum > 0 AND NOT a.attisdropped AND n.nspname LIKE E'private' AND c.relname LIKE E'system' AND a.attname LIKE E'%' ORDER BY nspname,relname,attnum
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT oid, typname, typbasetype,typtype FROM pg_type WHERE (typtype = 'b' and oid < 10000) OR typtype = 'p' OR typtype = 'e' OR typbasetype<>0 ORDER BY oid
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code, CAST (description AS CHARACTER VARYING(40)), mandatory FROM private.module WHERE system_code = NULL ORDER BY code
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT n.nspname,c.relname,a.attname,a.atttypid,a.attnotnull,a.atttypmod,a.attlen,a.attnum,pg_get_expr(def.adbin, def.adrelid) as adsrc,dsc.description  FROM pg_catalog.pg_namespace n  JOIN pg_catalog.pg_class c ON (c.relnamespace = n.oid)  JOIN pg_catalog.pg_attribute a ON (a.attrelid=c.oid)  LEFT JOIN pg_catalog.pg_attrdef def ON (a.attrelid=def.adrelid AND a.attnum = def.adnum) LEFT JOIN pg_catalog.pg_description dsc ON (c.oid=dsc.objoid AND a.attnum = dsc.objsubid)  LEFT JOIN pg_catalog.pg_class dc ON (dc.oid=dsc.classoid AND dc.relname='pg_class') LEFT JOIN pg_catalog.pg_namespace dn ON (dc.relnamespace=dn.oid AND dn.nspname='pg_catalog')  WHERE a.attnum > 0 AND NOT a.attisdropped AND n.nspname LIKE E'private' AND c.relname LIKE E'module' AND a.attname LIKE E'%' ORDER BY nspname,relname,attnum
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = NULL ORDER BY version
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT n.nspname,c.relname,a.attname,a.atttypid,a.attnotnull,a.atttypmod,a.attlen,a.attnum,pg_get_expr(def.adbin, def.adrelid) as adsrc,dsc.description  FROM pg_catalog.pg_namespace n  JOIN pg_catalog.pg_class c ON (c.relnamespace = n.oid)  JOIN pg_catalog.pg_attribute a ON (a.attrelid=c.oid)  LEFT JOIN pg_catalog.pg_attrdef def ON (a.attrelid=def.adrelid AND a.attnum = def.adnum) LEFT JOIN pg_catalog.pg_description dsc ON (c.oid=dsc.objoid AND a.attnum = dsc.objsubid)  LEFT JOIN pg_catalog.pg_class dc ON (dc.oid=dsc.classoid AND dc.relname='pg_class') LEFT JOIN pg_catalog.pg_namespace dn ON (dc.relnamespace=dn.oid AND dn.nspname='pg_catalog')  WHERE a.attnum > 0 AND NOT a.attisdropped AND n.nspname LIKE E'private' AND c.relname LIKE E'system_version' AND a.attname LIKE E'%' ORDER BY nspname,relname,attnum
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code =NULL AND system_version =str_to_ver4(NULL) ORDER BY module_code
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT n.nspname,c.relname,a.attname,a.atttypid,a.attnotnull,a.atttypmod,a.attlen,a.attnum,pg_get_expr(def.adbin, def.adrelid) as adsrc,dsc.description  FROM pg_catalog.pg_namespace n  JOIN pg_catalog.pg_class c ON (c.relnamespace = n.oid)  JOIN pg_catalog.pg_attribute a ON (a.attrelid=c.oid)  LEFT JOIN pg_catalog.pg_attrdef def ON (a.attrelid=def.adrelid AND a.attnum = def.adnum) LEFT JOIN pg_catalog.pg_description dsc ON (c.oid=dsc.objoid AND a.attnum = dsc.objsubid)  LEFT JOIN pg_catalog.pg_class dc ON (dc.oid=dsc.classoid AND dc.relname='pg_class') LEFT JOIN pg_catalog.pg_namespace dn ON (dc.relnamespace=dn.oid AND dn.nspname='pg_catalog')  WHERE a.attnum > 0 AND NOT a.attisdropped AND n.nspname LIKE E'private' AND c.relname LIKE E'system_composition' AND a.attname LIKE E'%' ORDER BY nspname,relname,attnum
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code= NULL ORDER BY code
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT n.nspname,c.relname,a.attname,a.atttypid,a.attnotnull,a.atttypmod,a.attlen,a.attnum,pg_get_expr(def.adbin, def.adrelid) as adsrc,dsc.description  FROM pg_catalog.pg_namespace n  JOIN pg_catalog.pg_class c ON (c.relnamespace = n.oid)  JOIN pg_catalog.pg_attribute a ON (a.attrelid=c.oid)  LEFT JOIN pg_catalog.pg_attrdef def ON (a.attrelid=def.adrelid AND a.attnum = def.adnum) LEFT JOIN pg_catalog.pg_description dsc ON (c.oid=dsc.objoid AND a.attnum = dsc.objsubid)  LEFT JOIN pg_catalog.pg_class dc ON (dc.oid=dsc.classoid AND dc.relname='pg_class') LEFT JOIN pg_catalog.pg_namespace dn ON (dc.relnamespace=dn.oid AND dn.nspname='pg_catalog')  WHERE a.attnum > 0 AND NOT a.attisdropped AND n.nspname LIKE E'private' AND c.relname LIKE E'site' AND a.attname LIKE E'%' ORDER BY nspname,relname,attnum
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =NULL
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT n.nspname,c.relname,a.attname,a.atttypid,a.attnotnull,a.atttypmod,a.attlen,a.attnum,pg_get_expr(def.adbin, def.adrelid) as adsrc,dsc.description  FROM pg_catalog.pg_namespace n  JOIN pg_catalog.pg_class c ON (c.relnamespace = n.oid)  JOIN pg_catalog.pg_attribute a ON (a.attrelid=c.oid)  LEFT JOIN pg_catalog.pg_attrdef def ON (a.attrelid=def.adrelid AND a.attnum = def.adnum) LEFT JOIN pg_catalog.pg_description dsc ON (c.oid=dsc.objoid AND a.attnum = dsc.objsubid)  LEFT JOIN pg_catalog.pg_class dc ON (dc.oid=dsc.classoid AND dc.relname='pg_class') LEFT JOIN pg_catalog.pg_namespace dn ON (dc.relnamespace=dn.oid AND dn.nspname='pg_catalog')  WHERE a.attnum > 0 AND NOT a.attisdropped AND n.nspname LIKE E'private' AND c.relname LIKE E'site_runs_system' AND a.attname LIKE E'%' ORDER BY nspname,relname,attnum
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =NULL AND system_code =NULL
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT n.nspname,c.relname,a.attname,a.atttypid,a.attnotnull,a.atttypmod,a.attlen,a.attnum,pg_get_expr(def.adbin, def.adrelid) as adsrc,dsc.description  FROM pg_catalog.pg_namespace n  JOIN pg_catalog.pg_class c ON (c.relnamespace = n.oid)  JOIN pg_catalog.pg_attribute a ON (a.attrelid=c.oid)  LEFT JOIN pg_catalog.pg_attrdef def ON (a.attrelid=def.adrelid AND a.attnum = def.adnum) LEFT JOIN pg_catalog.pg_description dsc ON (c.oid=dsc.objoid AND a.attnum = dsc.objsubid)  LEFT JOIN pg_catalog.pg_class dc ON (dc.oid=dsc.classoid AND dc.relname='pg_class') LEFT JOIN pg_catalog.pg_namespace dn ON (dc.relnamespace=dn.oid AND dn.nspname='pg_catalog')  WHERE a.attnum > 0 AND NOT a.attisdropped AND n.nspname LIKE E'private' AND c.relname LIKE E'site_runs_module' AND a.attname LIKE E'%' ORDER BY nspname,relname,attnum
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT 
+  CAST(username AS VARCHAR(20)) AS username,
+  CAST(name AS VARCHAR(20)) AS name, 
+  CAST(email AS VARCHAR(30)) AS email, 
+  CAST(phone AS VARCHAR(20)) AS phone, 
+  active 
+FROM 
+  private.user
+ORDER BY
+  username 
+
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT n.nspname,c.relname,a.attname,a.atttypid,a.attnotnull,a.atttypmod,a.attlen,a.attnum,pg_get_expr(def.adbin, def.adrelid) as adsrc,dsc.description  FROM pg_catalog.pg_namespace n  JOIN pg_catalog.pg_class c ON (c.relnamespace = n.oid)  JOIN pg_catalog.pg_attribute a ON (a.attrelid=c.oid)  LEFT JOIN pg_catalog.pg_attrdef def ON (a.attrelid=def.adrelid AND a.attnum = def.adnum) LEFT JOIN pg_catalog.pg_description dsc ON (c.oid=dsc.objoid AND a.attnum = dsc.objsubid)  LEFT JOIN pg_catalog.pg_class dc ON (dc.oid=dsc.classoid AND dc.relname='pg_class') LEFT JOIN pg_catalog.pg_namespace dn ON (dc.relnamespace=dn.oid AND dn.nspname='pg_catalog')  WHERE a.attnum > 0 AND NOT a.attisdropped AND n.nspname LIKE E'private' AND c.relname LIKE E'user' AND a.attname LIKE E'%' ORDER BY nspname,relname,attnum
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT
+  CAST(username AS VARCHAR(30)) AS username
+FROM
+  private.user
+ORDER BY
+  username
+
+2020-03-23 16:59:25 cat: Execute, proto: postgresql-9, msg: SELECT 
+  code
+FROM 
+  private.system
+ORDER BY
+  code
+
+2020-03-24 16:00:48 cat: Execute, proto: postgresql-9, msg: SELECT
+  system_code, 
+  module_code,
+  "version",
+  destination_path,
+  file_content 
+FROM 
+  public.module_file_diff 
+
+2020-03-24 16:00:48 cat: Execute, proto: postgresql-9, msg: SELECT n.nspname,c.relname,a.attname,a.atttypid,a.attnotnull,a.atttypmod,a.attlen,a.attnum,pg_get_expr(def.adbin, def.adrelid) as adsrc,dsc.description  FROM pg_catalog.pg_namespace n  JOIN pg_catalog.pg_class c ON (c.relnamespace = n.oid)  JOIN pg_catalog.pg_attribute a ON (a.attrelid=c.oid)  LEFT JOIN pg_catalog.pg_attrdef def ON (a.attrelid=def.adrelid AND a.attnum = def.adnum) LEFT JOIN pg_catalog.pg_description dsc ON (c.oid=dsc.objoid AND a.attnum = dsc.objsubid)  LEFT JOIN pg_catalog.pg_class dc ON (dc.oid=dsc.classoid AND dc.relname='pg_class') LEFT JOIN pg_catalog.pg_namespace dn ON (dc.relnamespace=dn.oid AND dn.nspname='pg_catalog')  WHERE a.attnum > 0 AND NOT a.attisdropped AND n.nspname LIKE E'public' AND c.relname LIKE E'module_file_diff' AND a.attname LIKE E'%' ORDER BY nspname,relname,attnum

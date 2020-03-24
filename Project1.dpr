@@ -5,7 +5,8 @@ uses
   Unit1 in 'Unit1.pas' {frmMainForm},
   Unit2 in 'Unit2.pas' {frmFormFileUpload},
   Unit3 in 'Unit3.pas' {frmResources},
-  Unit4 in 'Unit4.pas' {dmDataModule: TDataModule};
+  Unit4 in 'Unit4.pas' {dmDataModule: TDataModule},
+  HackDBGrid in 'HackDBGrid.pas';
 
 {$R *.res}
 

@@ -81,6 +81,12 @@ type
     qSiteRunsSystemCmbBoxcode: TWideStringField;
     qSiteRunsModuleCmbBoxsystem_code: TWideStringField;
     qSiteRunsModuleCmbBoxcode: TWideStringField;
+    qModFileDiffView: TZQuery;
+    dsModFileDiffView: TDataSource;
+    qModFileDiffViewsystem_code: TWideMemoField;
+    qModFileDiffViewmodule_code: TWideMemoField;
+    qModFileDiffViewdestination_path: TWideMemoField;
+    qModFileDiffViewfile_content: TBlobField;
     procedure DataModuleCreate(Sender: TObject);
     procedure readConfigFile();
     procedure qSystemAfterScroll(DataSet: TDataSet);
