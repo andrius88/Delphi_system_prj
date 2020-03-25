@@ -140,6 +140,10 @@ object frmMainForm: TfrmMainForm
       ImageIndex = 1
       OnEnter = tsSystemVersionEnter
       OnShow = tsSystemVersionShow
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       DesignSize = (
         722
         609)
@@ -323,6 +327,10 @@ object frmMainForm: TfrmMainForm
       Caption = 'Sites'
       ImageIndex = 2
       OnEnter = tsSitesEnter
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       DesignSize = (
         722
         609)
@@ -372,6 +380,7 @@ object frmMainForm: TfrmMainForm
         Height = 233
         Anchors = [akLeft, akTop, akRight]
         DataSource = dmDataModule.dsSite
+        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -379,6 +388,7 @@ object frmMainForm: TfrmMainForm
         TitleFont.Name = 'Tahoma'
         TitleFont.Style = []
         OnCellClick = dbgSitesCellClick
+        OnColEnter = dbgSitesColEnter
         OnColExit = dbgSitesColExit
         OnDrawColumnCell = dbgSitesDrawColumnCell
         OnExit = dbgSitesExit
@@ -523,8 +533,8 @@ object frmMainForm: TfrmMainForm
         TabOrder = 3
       end
       object cbUserComboBox: TDBLookupComboBox
-        Left = 560
-        Top = 13
+        Left = 544
+        Top = 3
         Width = 145
         Height = 21
         DataField = 'manager'
@@ -565,7 +575,6 @@ object frmMainForm: TfrmMainForm
         ListSource = dmDataModule.dsSiteRunsSystemCmbBox
         TabOrder = 7
         Visible = False
-        OnExit = cbSiteRunsSystemComboBoxExit
       end
       object cbSiteRunsModuleComboBox: TDBLookupComboBox
         Left = 480
@@ -655,63 +664,6 @@ object frmMainForm: TfrmMainForm
         DataSource = dmDataModule.dsUser
         Kind = dbnHorizontal
         TabOrder = 1
-      end
-    end
-    object tsUploads: TTabSheet
-      Caption = 'Uploads'
-      ImageIndex = 4
-      ExplicitLeft = 0
-      ExplicitTop = 27
-      object lblUploads: TLabel
-        Left = 3
-        Top = 23
-        Width = 57
-        Height = 19
-        Caption = 'Uploads'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-      end
-      object DBGrid1: TDBGrid
-        Left = 3
-        Top = 48
-        Width = 702
-        Height = 168
-        DataSource = dmDataModule.dsModFileDiffView
-        TabOrder = 0
-        TitleFont.Charset = DEFAULT_CHARSET
-        TitleFont.Color = clWindowText
-        TitleFont.Height = -11
-        TitleFont.Name = 'Tahoma'
-        TitleFont.Style = []
-        Columns = <
-          item
-            Expanded = False
-            FieldName = 'system_code'
-            Width = 111
-            Visible = True
-          end
-          item
-            Expanded = False
-            FieldName = 'module_code'
-            Width = 100
-            Visible = True
-          end
-          item
-            Expanded = False
-            FieldName = 'destination_path'
-            Width = 131
-            Visible = True
-          end
-          item
-            Expanded = False
-            FieldName = 'file_content'
-            Width = 136
-            Visible = True
-          end>
       end
     end
   end

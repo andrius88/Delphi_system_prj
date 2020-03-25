@@ -20,48 +20,45 @@ type
 
 type
   TfrmMainForm = class(TForm)
+    Label3: TLabel;
+    ZSQLMonitor1: TZSQLMonitor;
     PageControl1: TPageControl;
     tsSystem: TTabSheet;
+    lblLabelSystem: TLabel;
+    lblLabelModule: TLabel;
     dbgSystem: TDBGrid;
     dgbModule: TDBGrid;
     DBNavigator1: TDBNavigator;
     DBNavigator2: TDBNavigator;
-    lblLabelSystem: TLabel;
-    lblLabelModule: TLabel;
     tsSystemVersion: TTabSheet;
-    dbgSystemVersion: TDBGrid;
-    dbgModuleVersion: TDBGrid; // !!!
-    Label3: TLabel;
     lblLabelSystemVersion: TLabel;
     lblLabelModuleVersion: TLabel;
+    lblLabelSytemName: TLabel;
+    dbgSystemVersion: TDBGrid;
+    dbgModuleVersion: TDBGrid;
     DBNavigator3: TDBNavigator;
     DBNavigator4: TDBNavigator;
-    lblLabelSytemName: TLabel;
     cbDBLookupComboBox: TDBLookupComboBox;
     dbgModuleDiff: TDBGrid;
     Button1: TButton;
     Button2: TButton;
     tsSites: TTabSheet;
-    dbgSites: TDBGrid;
     lblSites: TLabel;
-    dbgSiteRunSystem: TDBGrid;
     lblSiteRunsSystem: TLabel;
-    dbgSiteRunsModule: TDBGrid;
     lblSiteRunsModule: TLabel;
+    dbgSites: TDBGrid;
+    dbgSiteRunSystem: TDBGrid;
+    dbgSiteRunsModule: TDBGrid;
     DBNavigator5: TDBNavigator;
-    tsUsers: TTabSheet;
-    dbgUser: TDBGrid;
-    DBNavigator6: TDBNavigator;
-    lblUser: TLabel;
     cbUserComboBox: TDBLookupComboBox;
-    ZSQLMonitor1: TZSQLMonitor;
     DBNavigator7: TDBNavigator;
     DBNavigator8: TDBNavigator;
     cbSiteRunsSystemComboBox: TDBLookupComboBox;
     cbSiteRunsModuleComboBox: TDBLookupComboBox;
-    tsUploads: TTabSheet;
-    DBGrid1: TDBGrid;
-    lblUploads: TLabel;
+    tsUsers: TTabSheet;
+    lblUser: TLabel;
+    dbgUser: TDBGrid;
+    DBNavigator6: TDBNavigator;
     procedure FormCreate(Sender: TObject);
     procedure tsSystemVersionEnter(Sender: TObject);
     procedure dbgModuleVersionColExit(Sender: TObject);
@@ -95,11 +92,12 @@ type
     procedure dbgSiteRunsModuleExit(Sender: TObject);
     procedure dbgSitesCellClick(Column: TColumn);
     procedure dbgUserExit(Sender: TObject);
-    procedure cbSiteRunsSystemComboBoxExit(Sender: TObject);
+    procedure dbgSitesColEnter(Sender: TObject);
 
 
   private
     //FDBGSites: THackDBGrid;
+    procedure ComboBox2Rect(ACombo: TWinControl; ARect: TGridRect);
   public
 
 end;
@@ -115,23 +113,25 @@ procedure TDBGrid.WMHScroll(var Msg: TWMHScroll);
 begin
   case Msg.ScrollCode of
     SB_ENDSCROLL:
-      OutputDebugString('SB_ENDSCROLL');
+      begin
+        if (Self.Name = 'dbgSites') and (self.SelectedField = dmDataModule.qSitemanager) then
+          Self.OnColEnter(Self);
+        OutputDebugString('SB_ENDSCROLL');
+      end;
     SB_LEFT:
       OutputDebugString('SB_LEFT');
     SB_RIGHT:
       OutputDebugString('SB_RIGHT');
     SB_LINELEFT:
     begin
-      //ShowMessage('Moves line left');
-      //cbUserComboBox.Visible := False;
+      //Self.OnColEnter(Self);
       OutputDebugString('SB_LINELEFT');
     end;
     SB_LINERIGHT:
       OutputDebugString('SB_LINERIGHT');
     SB_PAGELEFT:
     begin
-      //ShowMessage('Moves page left');
-      //cbUserComboBox.Visible := False;
+      //Self.OnColEnter(Self);
       OutputDebugString('SB_PAGELEFT');
     end;
     SB_PAGERIGHT:
@@ -362,15 +362,13 @@ begin
 //  cbUserComboBox.Left := Rect.Left + dbgSites.Left + 2;
 //  cbUserComboBox.Top := Rect.Top + dbgSites.Top + 2;
 //  cbUserComboBox.Width := Rect.Right - Rect.Left;
-//  cbUserComboBox.Width := Rect.Right - Rect.Left;
 //  cbUserComboBox.Height := Rect.Bottom - Rect.Top;
 //  cbUserComboBox.Visible := True;
 
    if Column.Index = 8 then
-     if (Column.Field.FieldName = cbUserComboBox.DataField) then
-      dbgSites.Options := dbgSiteRunSystem.Options - [dgEditing]
+     dbgSites.Options := dbgSites.Options - [dgEditing]
    else
-     dbgSites.Options := dbgSiteRunSystem.Options + [dgEditing];
+     dbgSites.Options := dbgSites.Options + [dgEditing];
    dbgSites.SetFocus;
 end;
 
@@ -385,7 +383,6 @@ begin
 //    begin
 //      cbSiteRunsSystemComboBox.Left := Rect.Left + dbgSiteRunSystem.Left + 2;
 //      cbSiteRunsSystemComboBox.Top := Rect.Top + dbgSiteRunSystem.Top + 2;
-//      cbSiteRunsSystemComboBox.Width := Rect.Right - Rect.Left;
 //      cbSiteRunsSystemComboBox.Width := Rect.Right - Rect.Left;
 //      cbSiteRunsSystemComboBox.Height := Rect.Bottom - Rect.Top;
 //
@@ -447,7 +444,6 @@ if (gdFocused in State) then
 end;
 
 
-
 procedure TfrmMainForm.dbgSiteRunSystemDrawColumnCell (Sender: TObject; const Rect: TRect;
  DataCol: Integer; Column: TColumn; State: TGridDrawState);
 begin
@@ -465,7 +461,6 @@ if (gdFocused in State) then
     end;
    end
 end;
-
 
 
 procedure TfrmMainForm.dbgSiteRunsModuleDrawColumnCell (Sender: TObject; const Rect: TRect;
@@ -493,6 +488,25 @@ begin
     cbDBLookupComboBox.Visible := False;
 end;
 
+
+procedure TfrmMainForm.dbgSitesColEnter(Sender: TObject);
+begin
+  if dbgSites.SelectedField = dmDataModule.qSitemanager then
+  begin
+    ComboBox2Rect(cbUserComboBox, dbgSites.Selection);
+  end
+  else
+    cbUserComboBox.Visible := True;
+end;
+
+procedure TfrmMainForm.ComboBox2Rect(ACombo: TWinControl; ARect: TGridRect);
+begin
+  ACombo.Left := ARect.Left + ARect.TopLeft.X + 2;
+  ACombo.Top := ARect.Top + ARect.TopLeft.Y + 2;
+  ACombo.Width := ARect.Right - ARect.Left;
+  ACombo.Height := ARect.Bottom - ARect.Top;
+  ACombo.Visible := True;
+end;
 
 procedure TfrmMainForm.dbgSitesColExit(Sender: TObject);
 begin
@@ -539,7 +553,6 @@ begin
     SendMessage(cbUserComboBox.Handle, WM_Char, word(Key), 0);
   end
 end;
-
 
 
 procedure TfrmMainForm.dbgSiteRunSystemKeyPress(Sender: TObject; var Key: Char);
@@ -593,23 +606,11 @@ begin
       cbSiteRunsSystemComboBox.Visible := False;
     end;
 
-
   dmDataModule.qSiteRunsModuleCmbBox.Close;
   dmDataModule.qSiteRunsModuleCmbBox.ParamByName('prm_system_code').Value := dmDataModule.qSiteRunsSystemsystem_code.Value;
   dmDataModule.qSiteRunsModuleCmbBox.Open;
-
-//  if cbSiteRunsSystemComboBox.Tag <> 2 then
-//  cbSiteRunsSystemComboBox.Visible := False;
-
-  //cbSiteRunsSystemComboBox.Visible := False;    //neveikia dropBox
-  //dbgSiteRunSystem.DoExit;  // luzta aplikacija
 end;
 
-procedure TfrmMainForm.cbSiteRunsSystemComboBoxExit(Sender: TObject);
-begin
-//  cbSiteRunsSystemComboBox.tag := 0;
-//  cbSiteRunsSystemComboBox.Visible := False;
-end;
 
 procedure TfrmMainForm.dbgSiteRunsModuleExit(Sender: TObject);
 begin
@@ -618,8 +619,6 @@ begin
       dmDataModule.qSiteRunsModule.ApplyUpdates;
       cbSiteRunsModuleComboBox.Visible := False;
     end;
-
-  //cbSiteRunsModuleComboBox.Visible := False;
 end;
 
 procedure TfrmMainForm.dbgSitesExit(Sender: TObject);

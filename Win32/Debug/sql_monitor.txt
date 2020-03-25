@@ -845,3 +845,1479 @@ ORDER BY
 2020-03-24 17:38:06 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
 2020-03-24 17:38:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
 2020-03-24 17:38:06 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:01 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:00:01 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:00:01 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:00:01 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:01 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:00:01 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:01 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:00:01 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:00:01 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:00:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =104
+2020-03-25 09:00:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:00:06 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:00:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:00:06 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:00:07 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:00:07 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:00:07 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:00:10 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =102
+2020-03-25 09:00:10 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 09:00:10 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:10 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 09:00:10 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:17 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:00:17 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:00:17 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:00:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:00:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:00:20 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:00:20 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:23 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:00:23 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:00:23 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:00:25 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:00:25 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:00:25 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:25 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:00:25 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:30 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 101, updater_user = 'updater_andrius', description = 'Smiltynës posts', address = 'Kurðiø nerija', contact_person = 'Petras Petrauskas', contact_phone = '37069912345', contact_email = 'petras@smiltyne.lt', comment = 'Komentaras_1', manager = 'test3', db_uri = 'db.nsoft.lt' WHERE site.id = 101
+2020-03-25 09:00:30 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:00:30 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:00:30 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:00:34 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:00:34 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:00:34 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:34 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:00:34 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:37 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 101, updater_user = 'updater_andrius', description = 'Smiltynës posts', address = 'Kurðiø nerija', contact_person = 'Petras Petrauskas', contact_phone = '37069912345', contact_email = 'petras@smiltyne.lt', comment = 'Komentaras_1', manager = 'Jonas Jonaitis', db_uri = 'db.nsoft.lt' WHERE site.id = 101
+2020-03-25 09:00:37 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:00:37 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:00:37 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:00:40 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:00:41 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:00:41 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:00:41 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:00:41 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:41 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:00:41 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:00:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:00:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:00:42 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:04:06 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:04:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:04:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:04:06 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:04:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:04:06 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:04:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:04:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:04:06 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:06:08 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:06:08 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:06:08 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:06:08 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:06:08 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:06:08 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:06:29 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:06:29 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:06:29 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:08:13 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:08:13 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:08:13 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:08:13 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:08:13 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:08:13 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:08:13 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:08:13 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:08:13 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:08:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =102
+2020-03-25 09:08:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 09:08:18 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:08:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 09:08:18 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:08:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:08:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:08:19 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:08:25 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:08:25 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:08:25 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:08:25 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:08:25 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:08:27 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:08:27 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:08:27 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:08:39 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:08:39 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:08:39 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:08:39 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:08:39 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:08:39 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:08:39 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:08:39 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:08:39 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:09:59 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =102
+2020-03-25 09:09:59 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 09:09:59 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:09:59 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 09:09:59 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:10:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:10:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:10:06 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:10:06 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:10:06 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:10:14 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 101, updater_user = 'updater_andrius', description = 'Smiltynës posts', address = 'Kurðiø nerija', contact_person = 'Petras Petrauskas', contact_phone = '37069912345', contact_email = 'petras@smiltyne.lt', comment = 'Komentaras_1', manager = 'test3', db_uri = 'db.nsoft.lt' WHERE site.id = 101
+2020-03-25 09:10:14 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =104
+2020-03-25 09:10:14 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:10:14 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:10:14 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:10:14 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:10:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:10:19 cat: Execute, proto: postgresql-9, msg: SELECT 
+  CAST(username AS VARCHAR(20)) AS username,
+  CAST(name AS VARCHAR(20)) AS name, 
+  CAST(email AS VARCHAR(30)) AS email, 
+  CAST(phone AS VARCHAR(20)) AS phone, 
+  active 
+FROM 
+  private.user
+ORDER BY
+  username 
+
+2020-03-25 09:10:20 cat: Execute, proto: postgresql-9, msg: SELECT
+  CAST(username AS VARCHAR(30)) AS username
+FROM
+  private.user
+ORDER BY
+  username
+
+2020-03-25 09:19:13 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:19:13 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:19:13 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:19:13 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:19:13 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:19:13 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:19:13 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:19:13 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:19:13 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:21:19 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:21:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:21:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:21:19 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:21:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:21:19 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:21:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:21:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:21:19 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:21:30 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:21:30 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:21:30 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:21:30 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:21:30 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:21:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:21:43 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:21:43 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:21:43 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:21:43 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:21:43 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:21:43 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:24:05 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:24:05 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:24:05 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:24:05 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:24:05 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:24:05 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:24:05 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:24:05 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:24:05 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:25:41 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:25:41 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:25:41 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:25:41 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:25:41 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:25:57 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:25:57 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:25:57 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:28:54 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:28:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:28:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:28:54 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:28:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:28:54 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:28:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:28:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:28:54 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =104
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:29:23 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:29:44 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 104, updater_user = 'test4', description = 'test4', address = NULL, contact_person = '12345', contact_phone = NULL, contact_email = 'test4', comment = NULL, manager = 'test3', db_uri = 'db.nsoft.lt' WHERE site.id = 104
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:29:48 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:30:09 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 101, updater_user = 'updater_andrius', description = 'Smiltynës posts', address = 'Kurðiø nerija', contact_person = 'Petras Petrauskas', contact_phone = '37069912345', contact_email = 'petras@smiltyne.lt', comment = 'Komentaras_1', manager = 'Jonas Jonaitis', db_uri = 'db.nsoft.lt' WHERE site.id = 101
+2020-03-25 09:30:11 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =104
+2020-03-25 09:30:11 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:30:11 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:30:11 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:30:11 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:30:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:30:17 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:30:17 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:30:17 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:30:17 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:30:17 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:30:17 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:30:24 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:30:24 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:30:24 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:30:36 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 103, updater_user = 'test3', description = 'testsss', address = NULL, contact_person = NULL, contact_phone = '12345', contact_email = 'test000', comment = NULL, manager = 'test', db_uri = 'db.nsoft.lt' WHERE site.id = 103
+2020-03-25 09:30:36 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =104
+2020-03-25 09:30:36 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:30:37 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:30:37 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:30:37 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:31:42 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:31:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:31:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:31:42 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:31:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:31:42 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:31:48 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 101, updater_user = 'updater_andrius', description = 'Smiltynës posts', address = 'Kurðiø nerija', contact_person = 'Petras Petrauskas', contact_phone = '37069912345', contact_email = 'petras@smiltyne.lt', comment = 'Komentaras_1', manager = 'test3', db_uri = 'db.nsoft.lt' WHERE site.id = 101
+2020-03-25 09:31:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:31:48 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:31:48 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:31:55 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 103, updater_user = 'test3', description = 'testsss', address = NULL, contact_person = NULL, contact_phone = '12345', contact_email = 'test', comment = NULL, manager = 'test', db_uri = 'db.nsoft.lt' WHERE site.id = 103
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:31:58 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:32:15 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 101, updater_user = 'updater_andrius', description = 'Smiltynës posts', address = 'Kurðiø nerija', contact_person = 'Petras Petrauskas', contact_phone = '37069912345', contact_email = 'petras@smiltyne.lt', comment = 'Komentaras_1', manager = 'Jonas Jonaitis', db_uri = 'db.nsoft.lt' WHERE site.id = 101
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:32:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:32:21 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:33:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:33:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:33:19 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:33:27 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =104
+2020-03-25 09:33:28 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:33:28 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:33:28 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:33:28 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:33:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:33:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:33:33 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:33:41 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 103, updater_user = 'test3', description = 'testsss', address = NULL, contact_person = NULL, contact_phone = '12345', contact_email = 'test', comment = 'Komentaras_3', manager = 'test', db_uri = 'db.nsoft.lt' WHERE site.id = 103
+2020-03-25 09:33:41 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =104
+2020-03-25 09:33:41 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:33:41 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:33:41 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:33:41 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:33:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 09:33:45 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:33:45 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:33:45 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:33:45 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:33:45 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:33:45 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:42:50 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:42:50 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:42:50 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:42:50 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:42:50 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:42:50 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:42:50 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:42:50 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:42:50 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:42:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:42:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:42:54 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:42:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:42:54 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:42:58 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 101, updater_user = 'updater_andrius', description = 'Smiltynës posts', address = 'Kurðiø nerija', contact_person = 'Petras Petrauskas', contact_phone = '37069912345', contact_email = 'petras@smiltyne.lt', comment = 'Komentaras_1', manager = 'test3', db_uri = 'db.nsoft.lt' WHERE site.id = 101
+2020-03-25 09:42:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 09:42:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 09:42:58 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 09:42:59 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =104
+2020-03-25 09:42:59 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:42:59 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:42:59 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 09:42:59 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 09:43:07 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 104, updater_user = 'test4', description = 'test4', address = NULL, contact_person = '12388', contact_phone = NULL, contact_email = 'test4', comment = NULL, manager = 'test3', db_uri = 'db.nsoft.lt' WHERE site.id = 104
+2020-03-25 09:43:10 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:43:10 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:43:10 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:43:10 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:43:10 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:54:42 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:54:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:54:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:54:42 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:54:42 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:54:42 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:55:20 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:55:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:55:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:55:20 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:55:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:55:20 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:55:52 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:55:52 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:55:52 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:55:52 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:55:52 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:55:52 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:56:43 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 09:56:43 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 09:56:43 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:56:43 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 09:56:43 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 09:56:43 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:35:28 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 10:35:28 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 10:35:28 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 10:35:28 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:35:28 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 10:35:28 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:36:14 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 10:36:14 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 10:36:14 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 10:36:14 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:36:15 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 10:36:15 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:36:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =102
+2020-03-25 10:36:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 10:36:16 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:36:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 10:36:16 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:36:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 10:36:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 10:36:18 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:36:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 10:36:18 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:36:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =102
+2020-03-25 10:36:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 10:36:19 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:36:19 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 10:36:19 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:36:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 10:36:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 10:36:20 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:36:20 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 10:36:20 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:43:11 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 10:43:11 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 10:43:11 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 10:43:11 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 10:43:11 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 10:43:11 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:06:29 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:06:29 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:06:29 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:06:29 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:06:29 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:06:29 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:11:49 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:11:49 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:11:49 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:11:49 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:11:49 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:11:49 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:12:44 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:12:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:12:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:12:44 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:12:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:12:44 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:16:35 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:16:35 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:16:35 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:16:35 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:16:35 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:16:35 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:18:34 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:18:34 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:18:34 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:18:34 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:18:34 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:18:34 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:20:03 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:20:03 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:20:03 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:20:03 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:20:03 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:20:03 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:20:37 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:20:37 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:20:37 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:20:37 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:20:37 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:20:37 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:27:28 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:27:28 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:27:28 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:27:28 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:27:28 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:27:28 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:29:16 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:29:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:29:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:29:16 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:29:16 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:29:16 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:29:33 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:29:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:29:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:29:33 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:29:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:29:33 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:30:58 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:30:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:30:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:30:58 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:30:58 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:30:58 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:31:34 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:31:34 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:31:34 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:31:34 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:31:34 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:31:34 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:31:35 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =102
+2020-03-25 11:31:35 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 11:31:35 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:31:35 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =102 AND system_code ='nPoint'
+2020-03-25 11:31:35 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:31:39 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 11:31:39 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 11:31:39 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 11:34:43 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:34:43 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:34:43 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:34:43 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:34:43 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:34:43 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:35:07 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 101, updater_user = 'updater_andrius', description = 'Smiltynës posts', address = 'Kurðiø nerija', contact_person = 'Petras Petrauskas', contact_phone = '37069912345', contact_email = 'petras@smiltyne.lt', comment = 'Komentaras_1', manager = 'Jonas Jonaitis', db_uri = 'db.nsoft.lt' WHERE site.id = 101
+2020-03-25 11:38:30 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:38:30 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:38:30 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:38:30 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:38:30 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:38:30 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:40:09 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:40:09 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:40:09 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:40:09 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:40:09 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:40:09 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:41:18 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:41:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:41:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:41:18 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:41:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:41:18 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:41:51 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:41:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:41:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:41:51 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:41:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:41:51 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:46:02 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:46:02 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:46:02 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:46:02 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:46:02 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:46:02 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:55:18 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:55:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:55:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:55:18 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:55:18 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:55:18 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:55:52 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =103
+2020-03-25 11:55:53 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =103 AND system_code =''
+2020-03-25 11:55:53 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 11:56:00 cat: Execute, proto: postgresql-9, msg: UPDATE private.site SET id = 103, updater_user = 'test3', description = 'testss', address = NULL, contact_person = NULL, contact_phone = '12345', contact_email = 'test', comment = 'Komentaras_3', manager = 'test', db_uri = 'db.nsoft.lt' WHERE site.id = 103
+2020-03-25 11:56:04 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='' ORDER BY code
+2020-03-25 11:56:04 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =104
+2020-03-25 11:56:04 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 11:56:04 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 11:56:04 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =104 AND system_code ='nGoals'
+2020-03-25 11:56:04 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nGoals' ORDER BY code
+2020-03-25 11:56:07 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:56:07 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:56:07 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:56:07 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:56:07 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:56:28 cat: Execute, proto: postgresql-9, msg: SELECT 
+  CAST(username AS VARCHAR(20)) AS username,
+  CAST(name AS VARCHAR(20)) AS name, 
+  CAST(email AS VARCHAR(30)) AS email, 
+  CAST(phone AS VARCHAR(20)) AS phone, 
+  active 
+FROM 
+  private.user
+ORDER BY
+  username 
+
+2020-03-25 11:56:31 cat: Execute, proto: postgresql-9, msg: SELECT
+  CAST(username AS VARCHAR(30)) AS username
+FROM
+  private.user
+ORDER BY
+  username
+
+2020-03-25 11:56:31 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:56:31 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:56:31 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:56:31 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:56:31 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:56:31 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:33 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:47 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:56:49 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:56:49 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:56:49 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:56:49 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:56:49 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:56:49 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:56:52 cat: Execute, proto: postgresql-9, msg: SELECT 
+  CAST(username AS VARCHAR(20)) AS username,
+  CAST(name AS VARCHAR(20)) AS name, 
+  CAST(email AS VARCHAR(30)) AS email, 
+  CAST(phone AS VARCHAR(20)) AS phone, 
+  active 
+FROM 
+  private.user
+ORDER BY
+  username 
+
+2020-03-25 11:57:36 cat: Execute, proto: postgresql-9, msg: SELECT
+  CAST(username AS VARCHAR(30)) AS username
+FROM
+  private.user
+ORDER BY
+  username
+
+2020-03-25 11:57:36 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:57:36 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:57:36 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:57:36 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:57:36 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:57:36 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:44 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:50 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 11:57:50 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:57:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:57:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:51 cat: Execute, proto: postgresql-9, msg: SELECT public.ver4_to_str("version")::varchar(100) as version FROM private.system_version WHERE system_code = 'nPoint' ORDER BY version
+2020-03-25 11:57:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:57:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, public.ver4_to_str("module_version")::varchar(100) as version FROM private.system_composition WHERE system_code ='nPoint' AND system_version =str_to_ver4('3.31.0.18') ORDER BY module_code
+2020-03-25 11:57:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:51 cat: Execute, proto: postgresql-9, msg: SELECT CAST(destination_path AS VARCHAR(50)), octet_length(file_content) AS size_in_bytes FROM private.module_version_diff WHERE system_code = 'nPoint' AND module_code = 'nFormer' AND "version" = str_to_ver4('3.30.3.0') ORDER BY destination_path
+2020-03-25 11:57:54 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 11:57:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 11:57:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:57:54 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 11:57:54 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 11:57:54 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 12:03:08 cat: Execute, proto: postgresql-9, msg: SELECT 
+  id,
+  CAST(updater_user AS VARCHAR(30)) AS updater_user,
+  CAST(description AS VARCHAR(30)) AS description,
+  CAST(address  AS VARCHAR(30)) AS address,
+  CAST(contact_person AS VARCHAR(30)) AS contact_person,
+  CAST(contact_phone AS VARCHAR(15)) AS contact_phone,
+  CAST(contact_email AS VARCHAR(30)) AS contact_email,
+  CAST(comment AS VARCHAR(30)) AS comment,
+  CAST(manager  AS VARCHAR(30)) AS manager,
+  CAST(db_uri AS VARCHAR(30)) AS db_uri 
+FROM 
+  private.site
+ORDER BY
+  id
+
+2020-03-25 12:03:08 cat: Execute, proto: postgresql-9, msg: SELECT CAST(system_code AS VARCHAR(20)) AS system_code, last_deployment, last_successfull_deployment FROM private.site_runs_system WHERE site =101
+2020-03-25 12:03:08 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 12:03:08 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code
+2020-03-25 12:03:08 cat: Execute, proto: postgresql-9, msg: SELECT CAST(module_code AS VARCHAR(20)) AS module_code, num_of_lic FROM private.site_runs_module WHERE site =101 AND system_code ='nPoint'
+2020-03-25 12:03:08 cat: Execute, proto: postgresql-9, msg: SELECT system_code, code FROM private.module WHERE system_code ='nPoint' ORDER BY code

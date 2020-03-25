@@ -19,49 +19,46 @@ type
 
 
 type
-  TfrmMainForm = class(TForm)
+  TfrmMainForm = class(TForm) // !!!
+    Label3: TLabel;
+    ZSQLMonitor1: TZSQLMonitor;
     PageControl1: TPageControl;
     tsSystem: TTabSheet;
+    lblLabelSystem: TLabel;
+    lblLabelModule: TLabel;
     dbgSystem: TDBGrid;
     dgbModule: TDBGrid;
     DBNavigator1: TDBNavigator;
     DBNavigator2: TDBNavigator;
-    lblLabelSystem: TLabel;
-    lblLabelModule: TLabel;
     tsSystemVersion: TTabSheet;
-    dbgSystemVersion: TDBGrid;
-    dbgModuleVersion: TDBGrid; // !!!
-    Label3: TLabel;
     lblLabelSystemVersion: TLabel;
     lblLabelModuleVersion: TLabel;
+    lblLabelSytemName: TLabel;
+    dbgSystemVersion: TDBGrid;
+    dbgModuleVersion: TDBGrid;
     DBNavigator3: TDBNavigator;
     DBNavigator4: TDBNavigator;
-    lblLabelSytemName: TLabel;
     cbDBLookupComboBox: TDBLookupComboBox;
     dbgModuleDiff: TDBGrid;
     Button1: TButton;
     Button2: TButton;
     tsSites: TTabSheet;
-    dbgSites: TDBGrid;
     lblSites: TLabel;
-    dbgSiteRunSystem: TDBGrid;
     lblSiteRunsSystem: TLabel;
-    dbgSiteRunsModule: TDBGrid;
     lblSiteRunsModule: TLabel;
+    dbgSites: TDBGrid;
+    dbgSiteRunSystem: TDBGrid;
+    dbgSiteRunsModule: TDBGrid;
     DBNavigator5: TDBNavigator;
-    tsUsers: TTabSheet;
-    dbgUser: TDBGrid;
-    DBNavigator6: TDBNavigator;
-    lblUser: TLabel;
     cbUserComboBox: TDBLookupComboBox;
-    ZSQLMonitor1: TZSQLMonitor;
     DBNavigator7: TDBNavigator;
     DBNavigator8: TDBNavigator;
     cbSiteRunsSystemComboBox: TDBLookupComboBox;
     cbSiteRunsModuleComboBox: TDBLookupComboBox;
-    tsUploads: TTabSheet;
-    DBGrid1: TDBGrid;
-    lblUploads: TLabel;
+    tsUsers: TTabSheet;
+    lblUser: TLabel;
+    dbgUser: TDBGrid;
+    DBNavigator6: TDBNavigator;
     procedure FormCreate(Sender: TObject);
     procedure tsSystemVersionEnter(Sender: TObject);
     procedure dbgModuleVersionColExit(Sender: TObject);
@@ -99,7 +96,7 @@ type
 
 
   private
-    FDBGSites: THackDBGrid;
+    //FDBGSites: THackDBGrid;
   public
 
 end;
@@ -111,7 +108,7 @@ implementation
 
 {$R *.dfm}
 
-procedure THackDBGrid.WMHScroll(var Msg: TWMHScroll);
+procedure TDBGrid.WMHScroll(var Msg: TWMHScroll);
 begin
   case Msg.ScrollCode of
     SB_ENDSCROLL:
@@ -121,11 +118,19 @@ begin
     SB_RIGHT:
       OutputDebugString('SB_RIGHT');
     SB_LINELEFT:
+    begin
+      //cbUserComboBox.Visible := False;
+      //ShowMessage('Moves line left');
       OutputDebugString('SB_LINELEFT');
+    end;
     SB_LINERIGHT:
       OutputDebugString('SB_LINERIGHT');
     SB_PAGELEFT:
+    begin
+      //cbUserComboBox.Visible := False;
+      //ShowMessage('Moves page left');
       OutputDebugString('SB_PAGELEFT');
+    end;
     SB_PAGERIGHT:
       OutputDebugString('SB_PAGERIGHT');
     SB_THUMBPOSITION:
@@ -358,11 +363,11 @@ begin
 //  cbUserComboBox.Height := Rect.Bottom - Rect.Top;
 //  cbUserComboBox.Visible := True;
 
+   //ShowMessage('comulmn index: ' + IntToStr(Column.Index));
    if Column.Index = 8 then
-     if (Column.Field.FieldName = cbUserComboBox.DataField) then
-      dbgSites.Options := dbgSiteRunSystem.Options - [dgEditing]
+     dbgSites.Options := dbgSites.Options - [dgEditing]
    else
-     dbgSites.Options := dbgSiteRunSystem.Options + [dgEditing];
+     dbgSites.Options := dbgSites.Options + [dgEditing];
    dbgSites.SetFocus;
 end;
 

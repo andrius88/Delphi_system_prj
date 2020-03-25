@@ -140,6 +140,10 @@ object frmMainForm: TfrmMainForm
       ImageIndex = 1
       OnEnter = tsSystemVersionEnter
       OnShow = tsSystemVersionShow
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       DesignSize = (
         722
         609)
@@ -323,6 +327,10 @@ object frmMainForm: TfrmMainForm
       Caption = 'Sites'
       ImageIndex = 2
       OnEnter = tsSitesEnter
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       DesignSize = (
         722
         609)
@@ -372,6 +380,7 @@ object frmMainForm: TfrmMainForm
         Height = 233
         Anchors = [akLeft, akTop, akRight]
         DataSource = dmDataModule.dsSite
+        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -379,6 +388,7 @@ object frmMainForm: TfrmMainForm
         TitleFont.Name = 'Tahoma'
         TitleFont.Style = []
         OnCellClick = dbgSitesCellClick
+        OnColEnter = dbgSitesColEnter
         OnColExit = dbgSitesColExit
         OnDrawColumnCell = dbgSitesDrawColumnCell
         OnExit = dbgSitesExit
@@ -565,10 +575,11 @@ object frmMainForm: TfrmMainForm
         ListSource = dmDataModule.dsSiteRunsSystemCmbBox
         TabOrder = 7
         Visible = False
+        OnExit = cbSiteRunsSystemComboBoxExit
       end
       object cbSiteRunsModuleComboBox: TDBLookupComboBox
-        Left = 504
-        Top = 288
+        Left = 480
+        Top = 293
         Width = 145
         Height = 21
         DataField = 'module_code'
@@ -584,8 +595,11 @@ object frmMainForm: TfrmMainForm
       Caption = 'Users'
       ImageIndex = 3
       OnEnter = tsUsersEnter
+      DesignSize = (
+        722
+        609)
       object lblUser: TLabel
-        Left = 16
+        Left = 3
         Top = 7
         Width = 39
         Height = 19
@@ -598,10 +612,11 @@ object frmMainForm: TfrmMainForm
         ParentFont = False
       end
       object dbgUser: TDBGrid
-        Left = 16
+        Left = 3
         Top = 32
-        Width = 689
+        Width = 716
         Height = 273
+        Anchors = [akLeft, akTop, akRight]
         DataSource = dmDataModule.dsUser
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
@@ -643,7 +658,7 @@ object frmMainForm: TfrmMainForm
           end>
       end
       object DBNavigator6: TDBNavigator
-        Left = 16
+        Left = 3
         Top = 311
         Width = 240
         Height = 25
